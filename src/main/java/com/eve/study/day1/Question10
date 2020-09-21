@@ -1,0 +1,13 @@
+You want a class to have access to members of another class in the same package. Which
+is the most restrictive access that accomplishes this objective?
+A. public
+B. private
+C. protected
+D. transient
+E. default access
+
+answer:public：被声明为public的变量和方法，对所有成员可见
+       protected：被声明为protected的变量和方法，仅对本类和直接继承于本类的子类可见
+       private：被声明为private的变量和方法，仅对本类可见，不能在类的外部，通过类的对象调用该方法或变量
+       默认修饰符：Thinking In Java 中称为 default access。如果不用以上三种修饰符，则默认带有默认修饰符，即在同包中的类之间可见（public），在不同包中的类之间不可见（private）
+       --The member objects of your new class are typically private,类中的实例变量一般都被标记为private----《Thinking In Java》
